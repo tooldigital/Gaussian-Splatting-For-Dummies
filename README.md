@@ -15,26 +15,36 @@ This is a Windows only implementation
 
 ## Python environment
 
-Now setup the Python environment. Use the Command Line tool and to be safe make sure you are in the location of the project.
+Now setup the Python environment. Use the Command Line tool and to be safe make sure you are in the location of the project. This can take a while.
 
 ```bash
-  conda env create -f environment.yml
+conda env create -f environment.yml
 ```
 ![envvar](https://raw.githubusercontent.com/tooldigital/Gaussian-Splatting-For-Dummies/main/github_images/cmd_1.png)
 
 now activate the conda environment
 
 ```bash
-  conda activate toolofna-gaussian_splatting
+conda activate toolofna-gaussian_splatting
 ```
 ![envvar](https://raw.githubusercontent.com/tooldigital/Gaussian-Splatting-For-Dummies/main/github_images/cmd_2.png)
 
 # Prepare your data
 We have created 2 scripts to prepare your data.
 
-The easiest way to assemble data is taking frames from a video or using photos from your scene or object.
+The easiest way to assemble data is taking frames from a video or using photos from your scene or object. We advise especially to run the images script - 1a_export_images.py -  scripts even if you already have images ready. We noticed that orientation data coming from images taken with a phone can  influence the Guassian Splat the wrong way. 
 
+Open one of the provided scripts - 1a_export_images.py or 1b_export_video.py, either for images or video and adjust the target paths.
 
+Now run the script and you see your images will be created in the output folder you specified.
+
+```bash
+python 1a_export_images.py
+```
+or 
+```bash
+1b_export_video.py
+```
 
 
 
