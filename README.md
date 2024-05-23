@@ -34,7 +34,9 @@ We have created 2 scripts to prepare your data.
 
 The easiest way to assemble data is taking frames from a video or using photos from your scene or object. We advise especially to run the images script - 1a_export_images.py -  scripts even if you already have images ready. We noticed that orientation data coming from images taken with a phone can  influence the Guassian Splat the wrong way. 
 
-Open one of the provided scripts - 1a_export_images.py or 1b_export_video.py, either for images or video and adjust the target paths.
+Open one of the provided scripts - 1a_export_images.py or 1b_export_video.py, either for images or video and adjust the source and destination target paths.
+
+![envvar](https://raw.githubusercontent.com/tooldigital/Gaussian-Splatting-For-Dummies/main/github_images/paths.png)
 
 Now run the script and you see your images will be created in the output folder you specified.
 
@@ -46,7 +48,46 @@ or
 1b_export_video.py
 ```
 
+Make sure that before creating your Gaussian Splat your images are in a folder called 'input'
 
+```
+<location>
+|---input
+    |---<image 0>
+    |---<image 1>
+    |---...
+```
+
+
+# Create the Guassian Splat
+
+Creating a Guassian Splat is a two step process. First we use COLMAP to create a pointcloud and camera calibration from your source images. 
+Second the COLMAP data is then used to create the actual Gaussian Splat.
+
+## COLMAP
+
+Make sure you are in the project root folder and run the following script. 
+
+location is the folder of your images at the position of where 'input' resides. So do not include 'input' in the location variable. 
+
+```bash
+python convert.py -s <location>
+```
+
+For example if this is where you have your input images/dataset stored
+
+```
+<c://>
+|---Gaussian-Splatting-For-Dummies
+    |---dataset
+        |---guitar
+            |---input
+                |---<image 1>
+                |---<image 2>
+                |---...
+```
+
+Make sure you are in the root of the project, then the location is: ./dataset/guitar
 
 
 
