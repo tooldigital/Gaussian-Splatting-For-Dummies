@@ -4,16 +4,16 @@ This is a 'frozen' version of the official [Guassian Splatting repository](https
 
 This is a Windows only implementation
 
-## Installing
+# Installing
 
-# Software
+## Software
 
 - Install [Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-py310_24.4.0-0-Windows-x86_64.exe) (we are using Pyhton 3.10 version) Make it easy on yourself and automatically add the PATH environment variable.
 ![envvar](https://raw.githubusercontent.com/tooldigital/StableDiffusionAPI/main/readme/conda.png) 
 - Install [Colmap](https://github.com/colmap/colmap/releases/download/3.9.1/COLMAP-3.9.1-windows-cuda.zip) and set the environment variables. We are using CUDA version 3.9.1
 ![envvar](https://raw.githubusercontent.com/tooldigital/Gaussian-Splatting-For-Dummies/main/github_images/env_var.png)
 
-# Python environment
+## Python environment
 
 Now setup the Python environment. Use the Command Line tool and to be safe make sure you are in the location of the project.
 
@@ -29,8 +29,12 @@ now activate the conda environment
 ```
 ![envvar](https://raw.githubusercontent.com/tooldigital/Gaussian-Splatting-For-Dummies/main/github_images/cmd_2.png)
 
-## Prepare your data
-We have created 2
+# Prepare your data
+We have created 2 scripts to prepare your data.
+
+The easiest way to assemble data is taking frames from a video or using photos from your scene or object.
+
+
 
 
 
