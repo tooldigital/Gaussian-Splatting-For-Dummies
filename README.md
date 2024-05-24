@@ -33,7 +33,11 @@ conda activate toolofna-gaussian_splatting
 With the conda environment activated we now have two install two extra submodules.
 
 ```bash
-pip install ./submodules
+pip install ./submodules/diff-gaussian-rasterization
+```
+
+```bash
+pip install ./submodules/simple-knn
 ```
 
 # Prepare your data
