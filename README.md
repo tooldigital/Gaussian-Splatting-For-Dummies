@@ -76,7 +76,7 @@ Make sure that before creating your Gaussian Splat your images are in a folder c
 # Create the Gaussian Splat
 
 Creating a Gaussian Splat is a two step process. First we use COLMAP to create a pointcloud and camera calibration from your source images. 
-Second this data is then used to create the actual Gaussian Splat.
+Then the output data of the COLMAP is then used to create the actual Gaussian Splat.
 
 ## COLMAP
 
