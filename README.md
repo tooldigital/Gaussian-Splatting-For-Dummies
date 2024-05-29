@@ -32,6 +32,7 @@ conda activate toolofna-gaussian_splatting
 
 With the conda environment activated we now have two install two extra submodules.
 
+The diff-gaussian-rasterization is actually where the magick happens...
 ```bash
 pip install ./submodules/diff-gaussian-rasterization
 ```
@@ -43,7 +44,7 @@ pip install ./submodules/simple-knn
 # Prepare your data
 We have created 2 scripts to prepare your data.
 
-The easiest way to assemble data is taking frames from a video or using photos from your scene or object. We advise especially to run the images script - 1a_export_images.py -  scripts even if you already have images ready. We noticed that orientation data coming from images taken with a phone can  influence the Guassian Splat the wrong way. 
+The easiest way to assemble data is taking frames from a video or using photos from your scene or object. We advise especially to run the images script - 1a_export_images.py - even if you already have images ready. We noticed that orientation data coming from images taken with a phone can influence the Guassian Splat the wrong way. 
 
 Open one of the provided scripts - 1a_export_images.py or 1b_export_video.py, either for images or video and adjust the source and destination target paths.
 
